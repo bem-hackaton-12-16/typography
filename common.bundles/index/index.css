@@ -3,6 +3,8 @@
     height: 24px;
 }
 .paragraph {
+    color: #333;
+
     font-size: 15px;
     font-family: sans-serif;
 
@@ -12,10 +14,13 @@
     margin-bottom: 15px;
 }
 .heading {
+    color: #333;
+
     font-family: sans-serif;
 
-    font-weight: 600;
-    line-height: 1.4;
+    font-weight: 300;
+    line-height: 1.1;
+    margin: 22.5px 0 7.5px 0;
 }
 .heading_level_1 {
     font-size: 42.8415px;
@@ -29,7 +34,9 @@
 .heading_level_4 {
     font-size: 19.5px;
 }
-.heading_level_5,
-.heading_level_6 {
+.heading_level_5 {
     font-size: 15px;
+}
+.heading_level_6 {
+    font-size: 11.53846px;
 }

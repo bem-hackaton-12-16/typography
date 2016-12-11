@@ -1,4 +1,6 @@
 :block(paragraph) {
+    color: $typography-base-color;
+
     font-size: $typography-base-font-size;
     font-family: $typography-base-font-family;
 

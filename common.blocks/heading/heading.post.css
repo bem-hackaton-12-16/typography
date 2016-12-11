@@ -1,8 +1,11 @@
 :block(heading) {
+    color: $typography-base-color;
+
     font-family: $typography-base-font-family;
 
     font-weight: $typography-heading-weight;
     line-height: $typography-heading-line-height;
+    margin: calc($typography-base-font-size * 1.5) 0 calc($typography-base-font-size / 2) 0;
 }
 
 :block(heading):mod(level 1) {
@@ -21,7 +24,10 @@
     font-size: calc($typography-base-font-size * $ms1) ;
 }
 
-:block(heading):mod(level 5),
-:block(heading):mod(level 6) {
+:block(heading):mod(level 5) {
     font-size: calc($typography-base-font-size * $ms0) ;
+}
+
+:block(heading):mod(level 6) {
+    font-size: calc($typography-base-font-size / $ms1) ;
 }
