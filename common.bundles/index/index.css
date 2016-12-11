@@ -4,4 +4,7 @@
 }
 .paragraph {
     font-size: 15px;
+    line-height: 21px;
+    font-family: sans-serif;
+    margin-bottom: 15px;
 }

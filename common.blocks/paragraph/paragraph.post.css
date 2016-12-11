@@ -1,3 +1,6 @@
 :block(paragraph) {
     font-size: $typography-base;
+    line-height: calc($typography-line-height * $typography-base);
+    font-family: $typography-font;
+    margin-bottom: $typography-base;
 }
