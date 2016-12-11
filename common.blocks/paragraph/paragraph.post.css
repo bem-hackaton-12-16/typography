@@ -1,11 +1,11 @@
 :block(paragraph) {
-    color: $typography-base-color;
+    color: var(--typography-base-color);
 
-    font-size: $typography-base-font-size;
-    font-family: $typography-base-font-family;
+    font-size: var(--typography-base-font-size);
+    font-family: var(--typography-base-font-family);
 
-    line-height: calc($typography-text-line-height * $typography-base-font-size);
-    font-weight: $typography-text-weight;
+    line-height: calc(var(--typography-text-line-height) * var(--typography-base-font-size));
+    font-weight: var(--typography-text-weight);
 
-    margin-bottom: $typography-base-font-size;
+    margin-bottom: var(--typography-base-font-size);
 }

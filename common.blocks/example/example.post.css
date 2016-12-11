@@ -1,7 +1,9 @@
-$color: green;
-$width: 12px;
+:root {
+    --color: green;
+    --width: 12px;
+}
 
 :block(example) {
-    color: $color;
-    height: calc($width * 2);
+    color: var(--color);
+    height: calc(var(--width) * 2);
 }

@@ -2,6 +2,7 @@
     color: green;
     height: 24px;
 }
+
 .paragraph {
     color: #333;
 
@@ -13,6 +14,7 @@
 
     margin-bottom: 15px;
 }
+
 .heading {
     color: #333;
 
@@ -22,21 +24,27 @@
     line-height: 1.1;
     margin: 22.5px 0 7.5px 0;
 }
+
 .heading_level_1 {
     font-size: 42.8415px;
 }
+
 .heading_level_2 {
     font-size: 32.955px;
 }
+
 .heading_level_3 {
     font-size: 25.35px;
 }
+
 .heading_level_4 {
     font-size: 19.5px;
 }
+
 .heading_level_5 {
     font-size: 15px;
 }
+
 .heading_level_6 {
     font-size: 11.53846px;
 }

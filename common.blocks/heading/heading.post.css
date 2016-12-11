@@ -1,33 +1,33 @@
 :block(heading) {
-    color: $typography-base-color;
+    color: var(--typography-base-color);
 
-    font-family: $typography-base-font-family;
+    font-family: var(--typography-base-font-family);
 
-    font-weight: $typography-heading-weight;
-    line-height: $typography-heading-line-height;
-    margin: calc($typography-base-font-size * 1.5) 0 calc($typography-base-font-size / 2) 0;
+    font-weight: var(--typography-heading-weight);
+    line-height: var(--typography-heading-line-height);
+    margin: calc(var(--typography-base-font-size) * 1.5) 0 calc(var(--typography-base-font-size) / 2) 0;
 }
 
 :block(heading):mod(level 1) {
-    font-size: calc($typography-base-font-size * $ms4) ;
+    font-size: calc(var(--typography-base-font-size) * var(--ms4));
 }
 
 :block(heading):mod(level 2) {
-    font-size: calc($typography-base-font-size * $ms3) ;
+    font-size: calc(var(--typography-base-font-size) * var(--ms3));
 }
 
 :block(heading):mod(level 3) {
-    font-size: calc($typography-base-font-size * $ms2) ;
+    font-size: calc(var(--typography-base-font-size) * var(--ms2));
 }
 
 :block(heading):mod(level 4) {
-    font-size: calc($typography-base-font-size * $ms1) ;
+    font-size: calc(var(--typography-base-font-size) * var(--ms1));
 }
 
 :block(heading):mod(level 5) {
-    font-size: calc($typography-base-font-size * $ms0) ;
+    font-size: calc(var(--typography-base-font-size) * var(--ms0));
 }
 
 :block(heading):mod(level 6) {
-    font-size: calc($typography-base-font-size / $ms1) ;
+    font-size: calc(var(--typography-base-font-size) / var(--ms1));
 }
