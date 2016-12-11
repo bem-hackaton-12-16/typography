@@ -5,11 +5,12 @@ var levels = ['common.blocks'],
         postcss : {
             core: require('enb-postcss/techs/enb-postcss'),
             plugins: [
-                require('postcss-import')()
+                require('postcss-import')(),
+                require('rebem-css'),
+                require('postcss-simple-vars')(),
+                require('postcss-calc')()
             ]
         }
-
-
     };
 
 module.exports = function(config) {

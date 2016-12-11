@@ -1,3 +1,7 @@
-.example {
-    color: red;
+$color: green;
+$width: 12px;
+
+:block(example) {
+    color: $color;
+    height: calc($width * 2);
 }

@@ -21,6 +21,9 @@
     "enb-bem-techs": "^2.2.2",
     "enb-postcss": "^1.2.0",
     "postcss": "^5.2.6",
-    "postcss-import": "^9.0.0"
+    "postcss-calc": "^5.3.1",
+    "postcss-import": "^9.0.0",
+    "postcss-simple-vars": "^3.0.0",
+    "rebem-css": "^0.2.0"
   }
 }
