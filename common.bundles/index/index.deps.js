@@ -7,5 +7,8 @@ exports.deps = [
     },
     {
         "block": "paragraph"
+    },
+    {
+        "block": "heading"
     }
 ];

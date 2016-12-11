@@ -8,7 +8,8 @@ var levels = ['common.blocks'],
                 require('postcss-import')(),
                 require('rebem-css'),
                 require('postcss-simple-vars')(),
-                require('postcss-calc')()
+                require('postcss-calc')(),
+                require('postcss-for')()
             ]
         }
     };

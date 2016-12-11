@@ -1,0 +1,27 @@
+:block(heading) {
+    font-family: $typography-base-font-family;
+
+    font-weight: $typography-heading-weight;
+    line-height: $typography-heading-line-height;
+}
+
+:block(heading):mod(level 1) {
+    font-size: calc($typography-base-font-size * $ms4) ;
+}
+
+:block(heading):mod(level 2) {
+    font-size: calc($typography-base-font-size * $ms3) ;
+}
+
+:block(heading):mod(level 3) {
+    font-size: calc($typography-base-font-size * $ms2) ;
+}
+
+:block(heading):mod(level 4) {
+    font-size: calc($typography-base-font-size * $ms1) ;
+}
+
+:block(heading):mod(level 5),
+:block(heading):mod(level 6) {
+    font-size: calc($typography-base-font-size * $ms0) ;
+}

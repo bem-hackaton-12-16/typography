@@ -4,7 +4,32 @@
 }
 .paragraph {
     font-size: 15px;
-    line-height: 21px;
     font-family: sans-serif;
+
+    line-height: 21px;
+    font-weight: 400;
+
     margin-bottom: 15px;
+}
+.heading {
+    font-family: sans-serif;
+
+    font-weight: 600;
+    line-height: 1.4;
+}
+.heading_level_1 {
+    font-size: 42.8415px;
+}
+.heading_level_2 {
+    font-size: 32.955px;
+}
+.heading_level_3 {
+    font-size: 25.35px;
+}
+.heading_level_4 {
+    font-size: 19.5px;
+}
+.heading_level_5,
+.heading_level_6 {
+    font-size: 15px;
 }
