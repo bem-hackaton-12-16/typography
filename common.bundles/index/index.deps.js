@@ -9,6 +9,9 @@ exports.deps = [
         "block": "paragraph"
     },
     {
+        "block": "blockquote"
+    },
+    {
         "block": "heading"
     }
 ];
