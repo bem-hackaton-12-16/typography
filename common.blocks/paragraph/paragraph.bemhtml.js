@@ -1,0 +1,3 @@
+block('paragraph')(
+    tag()('p')
+);

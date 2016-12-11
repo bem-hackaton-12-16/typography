@@ -19,6 +19,7 @@
   "dependencies": {
     "enb": "^1.5.1",
     "enb-bem-techs": "^2.2.2",
+    "enb-bemxjst": "^8.5.0",
     "enb-postcss": "^1.2.0",
     "postcss": "^5.2.6",
     "postcss-calc": "^5.3.1",
