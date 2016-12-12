@@ -1,0 +1,22 @@
+:block(blockquote) {
+    font-family: var(--typography-base-font-family);
+    font-size: calc(var(--typography-base-font-size) * var(--ms1));
+
+    border-left: 5px solid #eee;
+
+    margin-bottom: var(--typography-base-font-size);
+    padding: var(--typography-indent-small) var(--typography-indent-large);
+}
+
+:block(blockquote):elem(content) {
+    margin: 0 0 var(--typography-indent-small);
+}
+
+:block(blockquote):elem(footer) {
+    font-size: var(--typography-base-font-size);
+    color: var(--typography-muted-color);
+}
+
+:block(blockquote):elem(footer)::before {
+    content: '\2014 \00A0';
+}

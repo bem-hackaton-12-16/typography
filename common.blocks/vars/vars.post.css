@@ -2,7 +2,9 @@
     --typography-base-font-size: 15px;
     --typography-base-font-family: sans-serif;
     --typography-base-ratio: 1.3;
+
     --typography-base-color: #333;
+    --typography-muted-color: #999;
 
     --typography-text-line-height: 1.4;
     --typography-text-weight: 400;
@@ -20,4 +22,7 @@
     --ms6: calc(var(--typography-base-ratio) * var(--ms5));
     --ms7: calc(var(--typography-base-ratio) * var(--ms6));
 
+    --typography-indent-small: calc(var(--typography-base-font-size) / 2);
+    --typography-indent-normal: var(--typography-base-font-size);
+    --typography-indent-large: calc(var(--typography-base-font-size) * 1.5);
 }
