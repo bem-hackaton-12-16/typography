@@ -16,6 +16,33 @@ var levels = ['common.blocks'],
     };
 
 module.exports = function(config) {
+    config.includeConfig('enb-bem-tmpl-specs');
+
+    var tmplSpecs = config.module('enb-bem-tmpl-specs')
+        .createConfigurator('tmpl-specs', {
+            coverage: {
+                engines: ['bh'],
+                reportDirectory: 'coverage',
+                exclude: ['**/node_modules/**', '**/libs/**'],
+                reporters: ['lcov']
+            }
+        });
+
+    tmplSpecs.configure({
+        destPath: 'common.tmpl-specs',
+        levels: ['common.blocks'],
+        sourceLevels: [
+            {path: 'common.blocks', check: true}
+        ],
+        engines: {
+            'bemhtml': {
+                tech: 'enb-bemxjst/techs/bemhtml',
+                options: {
+                    exportName: 'BEMHTML'
+                }
+            }
+        }
+    });
 
     config.nodes('*.bundles/*', function(nodeConfig) {
         nodeConfig.addTechs([

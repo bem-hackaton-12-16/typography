@@ -1,9 +1,0 @@
-:root {
-    --color: green;
-    --width: 12px;
-}
-
-:block(example) {
-    color: var(--color);
-    height: calc(var(--width) * 2);
-}
