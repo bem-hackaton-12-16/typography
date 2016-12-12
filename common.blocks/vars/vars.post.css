@@ -8,9 +8,17 @@
 
     --typography-text-line-height: 1.4;
     --typography-text-weight: 400;
+    --typography-text-font-family: sans-serif;
+    --typography-text-font-size: var(--typography-base-font-size);
+
+    --typography-code-line-height: 1.4;
+    --typography-code-weight: 400;
+    --typography-code-font-family: monospace;
+    --typography-code-font-size: 13px;
 
     --typography-heading-line-height: 1.1;
     --typography-heading-weight: 300;
+    --typography-heading-font-family: sans-serif;
 
     --ms0: 1;
     --ms1: calc(var(--typography-base-ratio) * var(--ms0));

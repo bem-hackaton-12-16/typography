@@ -1,0 +1,13 @@
+:block(code) {
+    color: var(--typography-base-color);
+
+    font-size: var(--typography-code-font-size);
+    font-family: var(--typography-code-font-family);
+
+    line-height: calc(var(--typography-code-line-height) * var(--typography-code-font-size));
+    font-weight: var(--typography-code-weight);
+
+    background-color: #f2f2f2;
+    padding: var(--typography-indent-normal) var(--typography-indent-large);
+    margin: 0 0 var(--typography-base-font-size);
+}

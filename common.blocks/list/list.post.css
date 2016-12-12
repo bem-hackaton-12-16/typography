@@ -1,3 +1,7 @@
+:block(list) {
+    margin: 0 0 var(--typography-base-font-size);
+}
+
 :block(list):elem(item) {
     color: var(--typography-base-color);
 

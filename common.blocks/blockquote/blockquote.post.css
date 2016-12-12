@@ -4,7 +4,7 @@
 
     border-left: 5px solid #eee;
 
-    margin-bottom: var(--typography-base-font-size);
+    margin: 0 var(--typography-indent-large) var(--typography-indent-normal);
     padding: var(--typography-indent-small) var(--typography-indent-large);
 }
 
