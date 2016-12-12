@@ -39,3 +39,10 @@ jspm_packages
 
 .idea
 .DS_Store
+
+common.bundles/index/index.html
+common.bundles/index/index.css
+common.bundles/index/index.deps.js
+common.bundles/index/index.bemhtml.js
+
+common.tmpl-specs
