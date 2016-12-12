@@ -2360,6 +2360,15 @@ var api = new BEMHTML({});
 /// ------ BEM-XJST User-code Start -----
 /// -------------------------------------
 api.compile(function(match, block, elem, mod, elemMod, oninit, xjstOptions, wrap, replace, extend, mode, def, content, appendContent, prependContent, attrs, addAttrs, js, addJs, mix, addMix, mods, addMods, addElemMods, elemMods, tag, cls, bem, local, applyCtx, applyNext, apply) {
+/* begin: /Users/anyatyu/projects/typography/common.blocks/list/list.bemhtml.js */
+block('list')(
+
+    tag()('ul'),
+
+    elem('item').tag()('li')
+);
+
+/* end: /Users/anyatyu/projects/typography/common.blocks/list/list.bemhtml.js */
 /* begin: /Users/anyatyu/projects/typography/common.blocks/paragraph/paragraph.bemhtml.js */
 block('paragraph')(
     tag()('p')

@@ -1,5 +1,8 @@
 exports.deps = [
     {
+        "block": "list"
+    },
+    {
         "block": "vars"
     },
     {
