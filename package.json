@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gemini": "http-server -s -p 8000 & p=$!; gemini test --reporter html --reporter flat; e=$?; kill -9 ${p}; exit ${e}"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "enb-bem-techs": "^2.2.2",
     "enb-bem-tmpl-specs": "^1.3.1",
     "enb-bemxjst": "^8.5.0",
+    "enb-magic-factory": "^0.5.0",
     "enb-magic-platform": "^0.7.0",
     "enb-postcss": "^1.2.0",
     "postcss": "^5.2.6",
