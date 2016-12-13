@@ -8,6 +8,61 @@
 @param $ratio - коэффициент размера шрифта, относительно базового размера
 @param $line-height - коэффициент высоты строки, относительно размера шрифта
 */
+.typography p {
+    font-size: 15px;
+    line-height: 21px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #333;
+    margin: 0 0 15px;}
+.typography ul, .typography ol {
+    margin: 0 0 15px;}
+.typography li {
+    font-size: 15px;
+    line-height: 21px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #333;}
+.typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
+    font-family: sans-serif;
+    font-weight: 300;
+    color: #333;
+    margin: 20px 0 10px}
+.typography h1 {
+    font-size: 42.8415px;
+    line-height: 47.12565px;}
+.typography h2 {
+    font-size: 32.955px;
+    line-height: 36.2505px;}
+.typography h3 {
+    font-size: 25.35px;
+    line-height: 27.885px;}
+.typography h4 {
+    font-size: 19.5px;
+    line-height: 21.45px;}
+.typography h5 {
+    font-size: 15px;
+    line-height: 16.5px;}
+.typography h6 {
+    font-size: 11.53845px;
+    line-height: 12.6923px;}
+.typography blockquote {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 19.5px;
+    line-height: 27.3px;
+    color: #333;
+    padding: 10px 20px;
+    margin: 0 0 15px;}
+.typography blockquote > p {
+    margin: 0;}
+.typography blockquote > footer {
+    font-size: 13.5px;
+    line-height: 18.9px;
+    color: #999;
+    margin: 10px 0 0;}
+.typography blockquote > footer::before {
+    content: '\2014 \00A0';}
 .heading {
     font-family: sans-serif;
     font-weight: 300;
@@ -15,22 +70,22 @@
     margin: 20px 0 10px}
 .heading_level_1 {
     font-size: 42.8415px;
-    line-height: 47.12565px}
+    line-height: 47.12565px;}
 .heading_level_2 {
     font-size: 32.955px;
-    line-height: 36.2505px}
+    line-height: 36.2505px;}
 .heading_level_3 {
     font-size: 25.35px;
-    line-height: 27.885px}
+    line-height: 27.885px;}
 .heading_level_4 {
     font-size: 19.5px;
-    line-height: 21.45px}
+    line-height: 21.45px;}
 .heading_level_5 {
     font-size: 15px;
-    line-height: 16.5px}
+    line-height: 16.5px;}
 .heading_level_6 {
     font-size: 11.53845px;
-    line-height: 12.6923px}
+    line-height: 12.6923px;}
 .paragraph {
     font-size: 15px;
     line-height: 21px;

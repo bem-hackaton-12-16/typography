@@ -11,7 +11,8 @@ var levels = ['common.blocks'],
                 require('postcss-mixins')(),
                 require('postcss-simple-vars')(),
                 require('rebem-css'),
-                require('postcss-calc')()
+                require('postcss-calc')(),
+                require('postcss-nested')()
             ]
         }
     };

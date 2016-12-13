@@ -1,0 +1,39 @@
+:block(typography) {
+
+    p {
+        @add-mixin common-text;
+        @add-mixin common-margin;
+    }
+
+    ul, ol {
+        @add-mixin common-margin;
+    }
+
+    li {
+        @add-mixin common-text;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @add-mixin heading-text
+    }
+
+    @add-mixin heading-size h, $typography-heading-size-ratio;
+
+    blockquote {
+        @add-mixin blockquote;
+        @add-mixin common-padding;
+        @add-mixin common-margin;
+    }
+
+    blockquote > p {
+        @add-mixin blockquote-content;
+    }
+
+    blockquote > footer {
+        @add-mixin blockquote-footer;
+    }
+
+    blockquote > footer::before {
+        content: '\2014 \00A0';
+    }
+}
