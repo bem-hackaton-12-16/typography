@@ -1,15 +1,15 @@
 :block(blockquote) {
-    font-family: $typography-base-font-family;
-    /*font-size: calc($typography-base-font-size * $ms1);*/
+    @add-mixin blockquote;
+    @add-mixin common-padding;
+    @add-mixin common-margin;
+}
 
-    margin: 0 $typography-indent-large $typography-indent-normal;
-    padding: $typography-indent-small $typography-indent-large;
+:block(blockquote):elem(content) {
+    @add-mixin blockquote-content;
 }
 
 :block(blockquote):elem(footer) {
-    /*font-size: $typography-base-font-size;*/
-    color: $typography-muted-color;
-    margin: $typography-indent-small 0 0;
+    @add-mixin blockquote-footer;    
 }
 
 :block(blockquote):elem(footer)::before {
