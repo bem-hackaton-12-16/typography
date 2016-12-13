@@ -1,6 +1,7 @@
 /* base */
 $typography-base-color: #333;
 $typography-base-font-size: 15px;
+$typography-base-size-ratio: 1;
 $typography-base-font-family: sans-serif;
 $typography-base-font-weight: 400;
 $typography-base-line-height: 1.4;
@@ -34,14 +35,25 @@ $typography-text-font-size: $typography-base-font-size;
 $typography-indent-small: calc($typography-base-font-size / 2);
 $typography-indent-normal: $typography-base-font-size;
 
+/*
+@mixin base-text определяет размер шрифта и высоту строки
+@param $ratio - коэффициент размера шрифта, относительно базового размера
+@param $line-height - коэффициент высоты строки, относительно размера шрифта
+*/
+@define-mixin base-text $ratio, $line-height {
+
+    $x-font-size: calc($typography-base-font-size * $(ratio));
+
+    font-size: $x-font-size;
+    line-height: calc($x-font-size * $(line-height));
+}
 
 @define-mixin common-text {
 
-    font-family: $typography-base-font-family;
-    font-size: $typography-base-font-size;
-    font-weight: $typography-base-font-weight;
-    line-height: calc($typography-base-line-height * $typography-base-font-size);
+    @add-mixin base-text $typography-base-size-ratio, $typography-base-line-height;
 
+    font-family: $typography-base-font-family;
+    font-weight: $typography-base-font-weight;
     color: $typography-base-color;
 }
 
@@ -67,50 +79,44 @@ $typography-indent-normal: $typography-base-font-size;
 
 @define-mixin heading-size $prefix, $ratio {
 
-    $msx: calc($typography-base-font-size / $(ratio));
-    $ms0: $typography-base-font-size;
+    $msx: calc($typography-base-size-ratio / $(ratio));
+    $ms0: $typography-base-size-ratio;
     $ms1: calc($ms0 * $(ratio));
     $ms2: calc($ms1 * $(ratio));
     $ms3: calc($ms2 * $(ratio));
     $ms4: calc($ms3 * $(ratio));
 
     $(prefix)1 {
-        font-size: $ms4;
-        line-height: calc($typography-heading-line-height * $ms4);
+        @add-mixin base-text $ms4, $typography-heading-line-height;
     }
 
     $(prefix)2 {
-        font-size: $ms3;
-        line-height: calc($typography-heading-line-height * $ms3);
+        @add-mixin base-text $ms3, $typography-heading-line-height;
     }
 
     $(prefix)3 {
-        font-size: $ms2;
-        line-height: calc($typography-heading-line-height * $ms2);
+        @add-mixin base-text $ms2, $typography-heading-line-height;
     }
 
     $(prefix)4 {
-        font-size: $ms1;
-        line-height: calc($typography-heading-line-height * $ms1);
+        @add-mixin base-text $ms1, $typography-heading-line-height;
     }
 
     $(prefix)5 {
-        font-size: $ms0;
-        line-height: calc($typography-heading-line-height * $ms0);
+        @add-mixin base-text $ms0, $typography-heading-line-height;
     }
 
     $(prefix)6 {
-        font-size: $msx;
-        line-height: calc($typography-heading-line-height * $msx);
+        @add-mixin base-text $msx, $typography-heading-line-height;
     }
 }
 
 @define-mixin code-text {
 
+    @add-mixin base-text $typography-code-size-ratio, $typography-code-line-height;
+
     font-family: $typography-code-font-family;
-    font-size: calc($typography-base-font-size * $typography-code-size-ratio);
     font-weight: $typography-code-font-weight;
-    line-height: calc($typography-code-line-height * $typography-base-font-size * $typography-code-size-ratio);
 
     color: $typography-code-color;
 }
