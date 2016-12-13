@@ -1,7 +1,7 @@
 :block(list) {
-    @mixin common-margin;
+    @add-mixin common-margin;
 }
 
 :block(list):elem(item) {
-    @mixin common-text;
+    @add-mixin common-text;
 }

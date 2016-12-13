@@ -11,6 +11,11 @@
     --typography-heading-font-weight: 300;
     --typography-heading-line-height: 1.1;
 
+    --typography-code-color: var(--typography-base-color);
+    --typography-code-size-ratio: 0.9;
+    --typography-code-font-family: monospace;
+    --typography-code-font-weight: var(--typography-base-font-weight);
+    --typography-code-line-height: var(--typography-base-line-height);
 
 
 
@@ -23,14 +28,14 @@
     --typography-text-font-family: sans-serif;
     --typography-text-font-size: var(--typography-base-font-size);
 
-    --typography-code-line-height: 1.4;
     --typography-code-weight: 400;
-    --typography-code-font-family: monospace;
     --typography-code-font-size: 13px;
 
     --typography-indent-small: calc(var(--typography-base-font-size) / 2);
     --typography-indent-normal: var(--typography-base-font-size);
-    --typography-indent-large: calc(var(--typography-base-font-size) * 1.5);
+
+    --typography-indent: calc(var(--typography-base-font-size) * 2 / 3);
+    --typography-indent-large: calc(var(--typography-base-font-size) * 4 / 3);
 }
 
 @define-mixin common-text {
@@ -48,6 +53,11 @@
     margin: 0 0 var(--typography-base-font-size);
 }
 
+@define-mixin common-padding {
+
+    padding: var(--typography-indent) var(--typography-indent-large);
+}
+
 @define-mixin heading-text {
 
     font-family: var(--typography-heading-font-family);
@@ -55,7 +65,7 @@
 
     color: var(--typography-heading-color);
 
-    margin: calc(var(--typography-base-font-size) * 4 / 3) 0 calc(var(--typography-base-font-size) * 2 / 3);
+    margin: var(--typography-indent-large) 0 var(--typography-indent);
 }
 
 @define-mixin heading-size $prefix, $ratio {
@@ -100,13 +110,22 @@
     }
 }
 
+@define-mixin code-text {
+
+    font-family: var(--typography-code-font-family);
+    font-size: calc(var(--typography-base-font-size) * var(--typography-code-size-ratio));
+    font-weight: var(--typography-code-font-weight);
+    line-height: calc(var(--typography-code-line-height) * var(--typography-code-font-size));
+
+    color: var(--typography-code-color);
+}
 
 
 
 
 /*wefwewegwegweg*/
 
-/*@mixin text*/
+/*@add-mixin text*/
     /*var(--typography-base-font-size),*/
     /*var(--typography-base-font-family);*/
 

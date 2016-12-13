@@ -1,7 +1,7 @@
 :block(heading) {
-    @mixin heading-text
+    @add-mixin heading-text
 }
 
-@mixin heading-size
+@add-mixin heading-size
     :block(heading):mod(level)_,
     var(--typography-heading-size-ratio);

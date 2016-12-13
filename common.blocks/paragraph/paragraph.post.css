@@ -1,5 +1,4 @@
 :block(paragraph) {
-
-    @mixin common-text;
-    @mixin common-margin;
+    @add-mixin common-text;
+    @add-mixin common-margin;
 }
