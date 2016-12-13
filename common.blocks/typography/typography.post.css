@@ -17,7 +17,15 @@
         @add-mixin heading-text
     }
 
-    @add-mixin heading-size h, $typography-heading-size-ratio;
+    @add-mixin heading-size h, $typography-heading-size-ratio-md;
+
+    @breakpoint 1600px {
+        @add-mixin heading-size h, $typography-heading-size-ratio-lg;
+    }
+
+    @breakpoint 0 767px {
+        @add-mixin heading-size h, $typography-heading-size-ratio-sm;
+    }
 
     blockquote {
         @add-mixin blockquote;

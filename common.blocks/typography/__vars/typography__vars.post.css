@@ -1,6 +1,10 @@
 /* heading */
 $typography-heading-color: $typography-base-color;
-$typography-heading-size-ratio: 1.3;
+
+$typography-heading-size-ratio-sm: 1.23;
+$typography-heading-size-ratio-md: 1.3;
+$typography-heading-size-ratio-lg: 1.37;
+
 $typography-heading-font-family: $typography-base-font-family;
 $typography-heading-font-weight: 300;
 $typography-heading-line-height: 1.1;

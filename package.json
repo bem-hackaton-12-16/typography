@@ -25,6 +25,7 @@
     "enb-magic-platform": "^0.7.0",
     "enb-postcss": "^1.2.0",
     "postcss": "^5.2.6",
+    "postcss-breakpoints": "^1.1.0",
     "postcss-calc": "^5.3.1",
     "postcss-css-variables": "^0.6.0",
     "postcss-cssnext": "^2.9.0",

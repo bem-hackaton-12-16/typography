@@ -12,7 +12,8 @@ var levels = ['common.blocks'],
                 require('postcss-simple-vars')(),
                 require('rebem-css'),
                 require('postcss-calc')(),
-                require('postcss-nested')()
+                require('postcss-nested')(),
+                require('postcss-breakpoints')()
             ]
         }
     };
