@@ -8,6 +8,7 @@ var levels = ['common.blocks'],
             core: require('enb-postcss/techs/enb-postcss'),
             plugins: [
                 require('postcss-import')(),
+                require('postcss-mixins')(),
                 require('rebem-css'),
                 require('postcss-css-variables')(),
                 require('postcss-calc')()

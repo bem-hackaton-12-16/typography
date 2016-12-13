@@ -1,10 +1,16 @@
 :root {
     --typography-base-font-size: 15px;
     --typography-base-font-family: sans-serif;
-    --typography-base-ratio: 1.3;
+    --typography-base-font-weight: 400;
+    --typography-base-line-height: 1.4;
 
     --typography-base-color: #333;
     --typography-muted-color: #999;
+
+
+
+    --typography-base-ratio: 1.3;
+
 
     --typography-text-line-height: 1.4;
     --typography-text-weight: 400;
@@ -34,3 +40,28 @@
     --typography-indent-normal: var(--typography-base-font-size);
     --typography-indent-large: calc(var(--typography-base-font-size) * 1.5);
 }
+
+@define-mixin common-text {
+
+    font-family: var(--typography-base-font-family);
+    font-size: var(--typography-base-font-size);
+    font-weight: var(--typography-base-font-weight);
+    line-height: calc(var(--typography-base-line-height) * var(--typography-base-font-size));
+
+    color: var(--typography-base-color);
+}
+
+@define-mixin common-margin {
+
+    margin: 0 0 var(--typography-base-font-size);
+}
+
+
+
+/*wefwewegwegweg*/
+
+/*@mixin text*/
+    /*var(--typography-base-font-size),*/
+    /*var(--typography-base-font-family);*/
+
+/*wefwewegwegweg222222222*/
