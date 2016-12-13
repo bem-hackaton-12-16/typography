@@ -4,4 +4,4 @@
 
 @add-mixin heading-size
     :block(heading):mod(level)_,
-    var(--typography-heading-size-ratio);
+    $typography-heading-size-ratio;

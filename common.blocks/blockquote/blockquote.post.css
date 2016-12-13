@@ -1,15 +1,15 @@
 :block(blockquote) {
-    font-family: var(--typography-base-font-family);
-    /*font-size: calc(var(--typography-base-font-size) * var(--ms1));*/
+    font-family: $typography-base-font-family;
+    /*font-size: calc($typography-base-font-size * $ms1);*/
 
-    margin: 0 var(--typography-indent-large) var(--typography-indent-normal);
-    padding: var(--typography-indent-small) var(--typography-indent-large);
+    margin: 0 $typography-indent-large $typography-indent-normal;
+    padding: $typography-indent-small $typography-indent-large;
 }
 
 :block(blockquote):elem(footer) {
-    /*font-size: var(--typography-base-font-size);*/
-    color: var(--typography-muted-color);
-    margin: var(--typography-indent-small) 0 0;
+    /*font-size: $typography-base-font-size;*/
+    color: $typography-muted-color;
+    margin: $typography-indent-small 0 0;
 }
 
 :block(blockquote):elem(footer)::before {

@@ -41,7 +41,6 @@ jspm_packages
 .DS_Store
 
 common.bundles/index/index.html
-common.bundles/index/index.css
 common.bundles/index/index.deps.js
 common.bundles/index/index.bemhtml.js
 

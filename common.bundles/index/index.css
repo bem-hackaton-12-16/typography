@@ -1,0 +1,75 @@
+/* base */
+/* heading */
+/* code */
+/* indents */
+/* tmp*/
+/*wefwewegwegweg*/
+/*@add-mixin text*/
+/*var(--typography-base-font-size),*/
+/*var(--typography-base-font-family);*/
+/*wefwewegwegweg222222222*/
+.heading {
+    font-family: sans-serif;
+    font-weight: 300;
+    color: #333;
+    margin: 20px 0 10px}
+.heading_level_1 {
+    font-size: 42.8415px;
+    line-height: 47.12565px}
+.heading_level_2 {
+    font-size: 32.955px;
+    line-height: 36.2505px}
+.heading_level_3 {
+    font-size: 25.35px;
+    line-height: 27.885px}
+.heading_level_4 {
+    font-size: 19.5px;
+    line-height: 21.45px}
+.heading_level_5 {
+    font-size: 15px;
+    line-height: 16.5px}
+.heading_level_6 {
+    font-size: 11.53846px;
+    line-height: 12.69231px}
+.paragraph {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #333;
+    margin: 0 0 15px;
+}
+.code {
+    font-family: monospace;
+    font-size: 13.5px;
+    font-weight: 400;
+    line-height: 18.9px;
+    color: #333;
+    padding: 10px 20px;
+    margin: 0 0 15px;
+}
+.blockquote {
+    font-family: sans-serif;
+    /*font-size: calc($typography-base-font-size * $ms1);*/
+
+    margin: 0 20px 15px;
+    padding: 7.5px 20px;
+}
+.blockquote__footer {
+    /*font-size: $typography-base-font-size;*/
+    color: #999;
+    margin: 7.5px 0 0;
+}
+.blockquote__footer::before {
+    content: '\2014 \00A0';
+}
+.list {
+    margin: 0 0 15px;
+}
+.list__item {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #333;
+}

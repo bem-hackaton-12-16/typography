@@ -9,8 +9,8 @@ var levels = ['common.blocks'],
             plugins: [
                 require('postcss-import')(),
                 require('postcss-mixins')(),
+                require('postcss-simple-vars')(),
                 require('rebem-css'),
-                require('postcss-css-variables')(),
                 require('postcss-calc')()
             ]
         }
