@@ -1,17 +1,23 @@
 :root {
+    --typography-base-color: #333;
     --typography-base-font-size: 15px;
     --typography-base-font-family: sans-serif;
     --typography-base-font-weight: 400;
     --typography-base-line-height: 1.4;
 
-    --typography-base-color: #333;
+    --typography-heading-color: var(--typography-base-color);
+    --typography-heading-size-ratio: 1.3;
+    --typography-heading-font-family: var(--typography-base-font-family);
+    --typography-heading-font-weight: 300;
+    --typography-heading-line-height: 1.1;
+
+
+
+
+
+
+
     --typography-muted-color: #999;
-
-
-
-    --typography-base-ratio: 1.3;
-
-
     --typography-text-line-height: 1.4;
     --typography-text-weight: 400;
     --typography-text-font-family: sans-serif;
@@ -21,20 +27,6 @@
     --typography-code-weight: 400;
     --typography-code-font-family: monospace;
     --typography-code-font-size: 13px;
-
-    --typography-heading-line-height: 1.1;
-    --typography-heading-weight: 300;
-    --typography-heading-font-family: sans-serif;
-
-    --ms0: 1;
-    --ms1: calc(var(--typography-base-ratio) * var(--ms0));
-    --ms2: calc(var(--typography-base-ratio) * var(--ms1));
-    --ms3: calc(var(--typography-base-ratio) * var(--ms2));
-    --ms4: calc(var(--typography-base-ratio) * var(--ms3));
-
-    --ms5: calc(var(--typography-base-ratio) * var(--ms4));
-    --ms6: calc(var(--typography-base-ratio) * var(--ms5));
-    --ms7: calc(var(--typography-base-ratio) * var(--ms6));
 
     --typography-indent-small: calc(var(--typography-base-font-size) / 2);
     --typography-indent-normal: var(--typography-base-font-size);
@@ -46,7 +38,7 @@
     font-family: var(--typography-base-font-family);
     font-size: var(--typography-base-font-size);
     font-weight: var(--typography-base-font-weight);
-    line-height: calc(var(--typography-base-line-height) * var(--typography-base-font-size));
+    line-height: var(--typography-base-line-height);
 
     color: var(--typography-base-color);
 }
@@ -55,6 +47,60 @@
 
     margin: 0 0 var(--typography-base-font-size);
 }
+
+@define-mixin heading-text {
+
+    font-family: var(--typography-heading-font-family);
+    font-weight: var(--typography-heading-font-weight);
+
+    color: var(--typography-heading-color);
+
+    margin: calc(var(--typography-base-font-size) * 4 / 3) 0 calc(var(--typography-base-font-size) * 2 / 3);
+}
+
+@define-mixin heading-size $prefix, $ratio {
+
+    :root {
+        --msx: calc(var(--typography-base-font-size) / $(ratio));
+        --ms0: var(--typography-base-font-size);
+        --ms1: calc(var(--ms0) * $(ratio));
+        --ms2: calc(var(--ms1) * $(ratio));
+        --ms3: calc(var(--ms2) * $(ratio));
+        --ms4: calc(var(--ms3) * $(ratio));
+    }
+
+    $(prefix)1 {
+        font-size: var(--ms4);
+        line-height: calc(var(--typography-heading-line-height) * var(--ms4));
+    }
+
+    $(prefix)2 {
+        font-size: var(--ms3);
+        line-height: calc(var(--typography-heading-line-height) * var(--ms3));
+    }
+
+    $(prefix)3 {
+        font-size: var(--ms2);
+        line-height: calc(var(--typography-heading-line-height) * var(--ms2));
+    }
+
+    $(prefix)4 {
+        font-size: var(--ms1);
+        line-height: calc(var(--typography-heading-line-height) * var(--ms1));
+    }
+
+    $(prefix)5 {
+        font-size: var(--ms0);
+        line-height: calc(var(--typography-heading-line-height) * var(--ms0));
+    }
+
+    $(prefix)6 {
+        font-size: var(--msx);
+        line-height: calc(var(--typography-heading-line-height) * var(--msx));
+    }
+}
+
+
 
 
 
