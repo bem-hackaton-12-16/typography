@@ -38,7 +38,7 @@
     font-family: var(--typography-base-font-family);
     font-size: var(--typography-base-font-size);
     font-weight: var(--typography-base-font-weight);
-    line-height: var(--typography-base-line-height);
+    line-height: calc(var(--typography-base-line-height) * var(--typography-base-font-size));
 
     color: var(--typography-base-color);
 }

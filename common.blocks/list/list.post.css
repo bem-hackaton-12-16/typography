@@ -1,13 +1,7 @@
 :block(list) {
-    margin: 0 0 var(--typography-base-font-size);
+    @mixin common-margin;
 }
 
 :block(list):elem(item) {
-    color: var(--typography-base-color);
-
-    font-size: var(--typography-base-font-size);
-    font-family: var(--typography-base-font-family);
-
-    line-height: calc(var(--typography-text-line-height) * var(--typography-base-font-size));
-    font-weight: var(--typography-text-weight);
+    @mixin common-text;
 }
