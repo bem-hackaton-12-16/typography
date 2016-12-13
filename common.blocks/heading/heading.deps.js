@@ -1,3 +1,3 @@
 ({
-    mustDeps: ['vars']
+    mustDeps: ['typography']
 })

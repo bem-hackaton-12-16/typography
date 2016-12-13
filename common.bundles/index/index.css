@@ -1,18 +1,13 @@
 /* base */
+/* indents */
 /* heading */
 /* code */
 /* blockquote */
-/* indents */
 /*
 @mixin base-text определяет размер шрифта и высоту строки
 @param $ratio - коэффициент размера шрифта, относительно базового размера
 @param $line-height - коэффициент высоты строки, относительно размера шрифта
 */
-/*wefwewegwegweg*/
-/*@add-mixin text*/
-/*var(--typography-base-font-size),*/
-/*var(--typography-base-font-family);*/
-/*wefwewegwegweg222222222*/
 .heading {
     font-family: sans-serif;
     font-weight: 300;
