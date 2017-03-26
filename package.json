@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "enb make",
     "test": "magic run tmpl-specs"
   },
   "repository": {
