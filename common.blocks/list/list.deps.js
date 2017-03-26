@@ -1,3 +1,3 @@
 ({
-    mustDeps: ['typography']
+    mustDeps: ['typography-core']
 })

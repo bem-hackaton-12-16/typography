@@ -1,3 +1,5 @@
 ({
-    mustDeps: [ { elem: ['base-vars', 'vars', 'mixins'] } ]
+    mustDeps: [
+        { block: 'typography-core' }
+    ]
 })

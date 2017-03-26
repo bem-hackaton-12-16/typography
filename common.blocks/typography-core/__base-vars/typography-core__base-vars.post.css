@@ -8,4 +8,4 @@ $typography-base-line-height: 1.4;
 
 /* indents */
 $typography-indent: calc($typography-base-font-size * 2 / 3);
-$typography-indent-large: calc($typography-base-font-size * 4 / 3);
+$typography-indent-large: calc($typography-indent * 2);
