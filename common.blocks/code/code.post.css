@@ -2,4 +2,9 @@
     @add-mixin code-text;
     @add-mixin common-padding;
     @add-mixin common-margin;
+
+    &:elem(inner) {
+        word-break: break-all;
+        word-wrap: break-word;
+    }
 }

@@ -1,7 +1,7 @@
-exports.blocks = [
-    { name: 'list' },
-    { name: 'heading' },
-    { name: 'paragraph' },
-    { name: 'code' },
-    { name: 'blockquote' }
+exports.deps = [
+    { block: 'list' },
+    { block: 'heading' },
+    { block: 'paragraph' },
+    { block: 'code', mods: { inline: 'yes' } },
+    { block: 'blockquote' }
 ];

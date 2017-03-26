@@ -8,6 +8,12 @@
 @param $ratio - коэффициент размера шрифта, относительно базового размера
 @param $line-height - коэффициент высоты строки, относительно размера шрифта
 */
+/*region heading*/
+/*endregion*/
+/*region code*/
+/*endregion*/
+/*region blockquote*/
+/*endregion*/
 .heading {
     font-family: sans-serif;
     font-weight: 300;
@@ -86,6 +92,9 @@
     padding: 10px 20px;
     margin: 0 0 15px;
 }
+.code__inner {
+    word-break: break-all;
+    word-wrap: break-word;}
 .blockquote {
     font-family: sans-serif;
     font-weight: 300;
@@ -116,4 +125,8 @@
     font-family: sans-serif;
     font-weight: 400;
     color: #333;
+}
+.code_inline_yes {
+    margin: 0;
+    padding: 0;
 }

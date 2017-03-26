@@ -1,11 +1,11 @@
 block('code')(
     tag()('pre'),
 
-    elem('content').tag()('code'),
+    elem('inner').tag()('code'),
 
     content()(function() {
         return {
-            elem: 'content',
+            elem: 'inner',
             content: this.ctx.content
         };
     })

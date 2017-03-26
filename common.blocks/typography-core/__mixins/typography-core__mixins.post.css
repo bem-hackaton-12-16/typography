@@ -30,6 +30,8 @@
     padding: $typography-indent $typography-indent-large;
 }
 
+/*region heading*/
+
 @define-mixin heading-text {
 
     font-family: $typography-heading-font-family;
@@ -74,6 +76,10 @@
     }
 }
 
+/*endregion*/
+
+/*region code*/
+
 @define-mixin code-text {
 
     @add-mixin base-text $typography-code-size-ratio, $typography-code-line-height;
@@ -83,6 +89,10 @@
 
     color: $typography-code-color;
 }
+
+/*endregion*/
+
+/*region blockquote*/
 
 @define-mixin blockquote {
     font-family: $typography-blockquote-font-family;
@@ -100,3 +110,5 @@
     color: $typography-blockquote-footer-color;
     margin: $typography-indent 0 0;
 }
+
+/*endregion*/
