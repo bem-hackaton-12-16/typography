@@ -38,10 +38,17 @@ module.exports = function(config) {
             {path: 'common.blocks', check: true}
         ],
         engines: {
-            'bemhtml': {
+            bemhtml: {
                 tech: 'enb-bemxjst/techs/bemhtml',
                 options: {
                     exportName: 'BEMHTML'
+                }
+            },
+            bh: {
+                tech: 'enb-bh/techs/bh-commonjs',
+                options: {
+                    jsAttrName: 'data-bem',
+                    jsAttrScheme: 'json'
                 }
             }
         }
