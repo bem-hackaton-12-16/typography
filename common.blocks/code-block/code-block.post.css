@@ -1,0 +1,10 @@
+:block(code-block) {
+    @add-mixin code-text;
+    @add-mixin common-padding;
+    @add-mixin common-margin;
+}
+
+:block(code-block):elem(inner) {
+    word-break: break-all;
+    word-wrap: break-word;
+}

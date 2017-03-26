@@ -1,4 +1,4 @@
-block('code')(
+block('code-block')(
     tag()('pre'),
 
     elem('inner').tag()('code'),

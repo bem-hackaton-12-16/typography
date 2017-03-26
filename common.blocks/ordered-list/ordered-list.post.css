@@ -1,0 +1,7 @@
+:block(ordered-list) {
+    @add-mixin common-margin;
+}
+
+:block(ordered-list):elem(item) {
+    @add-mixin common-text;
+}

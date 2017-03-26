@@ -1,0 +1,3 @@
+:block(inline-code) {
+    @add-mixin code-text;
+}

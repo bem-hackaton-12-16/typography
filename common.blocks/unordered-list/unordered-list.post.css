@@ -1,7 +1,7 @@
-:block(list) {
+:block(unordered-list) {
     @add-mixin common-margin;
 }
 
-:block(list):elem(item) {
+:block(unordered-list):elem(item) {
     @add-mixin common-text;
 }

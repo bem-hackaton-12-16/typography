@@ -1,7 +1,9 @@
 exports.deps = [
-    { block: 'list' },
+    { block: 'unordered-list' },
+    { block: 'ordered-list' },
     { block: 'heading' },
     { block: 'paragraph' },
-    { block: 'code', mods: { inline: 'yes' } },
+    { block: 'code-block' },
+    { block: 'inline-code' },
     { block: 'blockquote' }
 ];

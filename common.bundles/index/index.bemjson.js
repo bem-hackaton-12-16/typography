@@ -20,12 +20,12 @@ module.exports = {
                 {
                     block: 'paragraph',
                     content: [
-                        'Pellentesque habitant morbi tristique',
-                        { block: 'code', mods: { inline: 'yes' }, content: 'senectus et netus et malesuada' },
+                        'Pellentesque habitant morbi tristique ',
+                        { block: 'inline-code', content: 'senectus et netus et malesuada' },
                         ' fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus'
                     ]
                 },
-                { block: 'code', content: 'var i = 5;\nwhile(true)\n{\n    console.log("yo!");\n}' },
+                { block: 'code-block', content: 'var i = 5;\nwhile(true)\n{\n    console.log("yo!");\n}' },
                 { block: 'heading', mods: { level: '3' }, content: 'Размер текста заголовка' },
                 { block: 'paragraph', content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus' },
                 { block: 'heading', mods: { level: '4' }, content: 'Размер текста заголовка' },
@@ -33,7 +33,7 @@ module.exports = {
                 { block: 'heading', mods: { level: '5' }, content: 'Размер текста заголовка' },
                 { block: 'paragraph', content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus' },
                 {
-                    block: 'list',
+                    block: 'unordered-list',
                     content: [
                         { elem: 'item', content: 'Milk' },
                         { elem: 'item', content: 'Coffee' },
@@ -41,6 +41,14 @@ module.exports = {
                     ]
                 },
                 { block: 'heading', mods: { level: '6' }, content: 'Размер текста заголовка' },
+                {
+                    block: 'ordered-list',
+                    content: [
+                        { elem: 'item', content: 'Milk' },
+                        { elem: 'item', content: 'Coffee' },
+                        { elem: 'item', content: 'Apple' }
+                    ]
+                },
                 { block: 'paragraph', content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus' }
             ]
         ]
